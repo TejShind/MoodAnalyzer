@@ -10,7 +10,6 @@ public class MoodAnalyzerTest {
         String actual = moodAnalyzer.analyzeMood("Happy Mood");
         String expected = "Happy";
         Assert.assertEquals(expected, actual);
-
     }
 
     @Test
