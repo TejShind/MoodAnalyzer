@@ -1,9 +1,21 @@
 package com.blz.moodanalyzer;
 
 public class MoodAnalyzer {
-    public String analyzeMood(String msg) {
-        if (msg.toLowerCase().contains("sad"))
-            return "sad";
-        return "Happy";
+
+    public String message;
+
+    public MoodAnalyzer() {
     }
+
+    public MoodAnalyzer(String message) {
+        this.message = message;
+    }
+
+    public String analyzeMood() {
+        if (this.message.toLowerCase().contains("sad"))
+            return "sad";
+        return "happy";
+    }
+
+
 }
