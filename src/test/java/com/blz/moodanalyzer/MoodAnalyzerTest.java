@@ -8,7 +8,7 @@ public class MoodAnalyzerTest {
 
     @Test
     public void givenSadMood_ShouldReturnSad() throws InvalidMoodException {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in Sad mood");
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in sad mood");
         String actual = moodAnalyzer.analyzeMood();
         String expected = "sad";
         Assert.assertEquals(expected, actual);
