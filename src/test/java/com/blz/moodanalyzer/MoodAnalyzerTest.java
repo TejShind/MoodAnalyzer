@@ -44,5 +44,4 @@ public class MoodAnalyzerTest {
             System.out.println();
         }
     }
-
 }
