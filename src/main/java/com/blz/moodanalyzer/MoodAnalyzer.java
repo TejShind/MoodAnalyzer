@@ -13,12 +13,14 @@ public class MoodAnalyzer {
 
     public String analyzeMood() throws InvalidMoodException {
         try {
-            if (this.message.toLowerCase().contains("sad"))
-                return "sad";
-            return "happy";
-        } catch (NullPointerException exception) {
-            throw new InvalidMoodException("Null mood");
-
+            if (this.message.isEmpty())
+                throw new InvalidMoodException("Please Enter valid mood", InvalidMoodException.ExceptionType.EMPTY);
+            else if (this.message.contains("SAD"))
+                return "SAD";
+            return "HAPPY";
+        } catch (NullPointerException e) {
+            throw new InvalidMoodException("Please Enter valid mood", InvalidMoodException.ExceptionType.NULL);
         }
     }
 }
+

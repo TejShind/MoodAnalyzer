@@ -8,3 +8,4 @@ TC-1.2: "I am in Happy mood message" in constructor should be return Happy.
 TC 2.1:"Given Null mood should return happy".
 4.UC3-Create custom exception class.
 5 TC-3.1: Create Test case for Null mood in try catch block throw InvalidMoodException.
+6.TC-3.2: Added enum function to handle null and empty exception.
